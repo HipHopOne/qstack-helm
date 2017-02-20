@@ -33,5 +33,5 @@ done
 Note: You need to provide the url to the final location of the downloadable artifacts.
 
 ```bash 
-helm repo index --url https://git.greenqloud.com/sverrir/qstack-helm/blob/master/charts/ ./charts
+helm repo index --url https://git.greenqloud.com/sverrir/qstack-helm/raw/master/charts/ ./charts
 ```
