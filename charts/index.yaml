@@ -1,0 +1,267 @@
+apiVersion: v1
+entries:
+  cockroachdb:
+  - created: 2017-02-20T13:40:27.813540451Z
+    description: CockroachDB is a scalable, survivable, strongly-consistent SQL database.
+    digest: c51bf6c3d07067b80ca8661ff8460b2bb7d25d242f153045668ba95566fc8069
+    home: https://www.cockroachlabs.com
+    icon: https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png
+    maintainers:
+    - email: alex@cockroachlabs.com
+      name: Alex Robinson
+    name: cockroachdb
+    sources:
+    - https://github.com/cockroachdb/cockroach
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/cockroachdb-0.2.2.tgz
+    version: 0.2.2
+  dokuwiki:
+  - created: 2017-02-20T13:40:27.814228326Z
+    description: DokuWiki is a standards-compliant, simple to use wiki optimized for
+      creating documentation. It is targeted at developer teams, workgroups, and small
+      companies. All data is stored in plain text files, so no database is required.
+    digest: f533bc20e08179a49cca77b175f897087dc3f2c57e6c89ecbd7264ab5975d66a
+    engine: gotpl
+    home: http://www.dokuwiki.org/
+    icon: https://bitnami.com/assets/stacks/dokuwiki/img/dokuwiki-stack-110x117.png
+    keywords:
+    - dokuwiki
+    - wiki
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: dokuwiki
+    sources:
+    - https://github.com/bitnami/bitnami-docker-dokuwiki
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/dokuwiki-0.1.2.tgz
+    version: 0.1.2
+  drupal:
+  - created: 2017-02-20T13:40:27.814761756Z
+    description: One of the most versatile open source content management systems.
+    digest: adb23bc71125b9691b407a47dadf4298de3516805218813b56067967e39db7d8
+    engine: gotpl
+    home: http://www.drupal.org/
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: drupal
+    sources:
+    - https://github.com/bitnami/bitnami-docker-drupal
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/drupal-0.4.2.tgz
+    version: 0.4.2
+  jenkins:
+  - created: 2017-02-20T13:40:27.815144365Z
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 6c5039f7ab62e7f74bb902f5804814f66733c535908b4ffae1cf759efa3c6f24
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan@deis.com
+      name: Lachlan Evenson
+    - email: viglesias@google.com
+      name: Vic Iglesias
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/jenkins-0.1.14.tgz
+    version: 0.1.14
+  joomla:
+  - created: 2017-02-20T13:40:27.815661686Z
+    description: PHP content management system (CMS) for publishing web content
+    digest: 9a99b15e83e18955eb364985cd545659f1176ef203ac730876dfe39499edfb18
+    engine: gotpl
+    home: http://www.joomla.org/
+    icon: https://bitnami.com/assets/stacks/joomla/img/joomla-stack-220x234.png
+    keywords:
+    - joomla
+    - cms
+    - blog
+    - http
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: joomla
+    sources:
+    - https://github.com/bitnami/bitnami-docker-joomla
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/joomla-0.4.3.tgz
+    version: 0.4.3
+  minio:
+  - apiVersion: v1
+    created: 2017-02-20T13:40:27.816069244Z
+    description: Distributed object storage server built for cloud applications and
+      devops.
+    digest: d19b721fcb5f0566cce4a259e296b957ba982e87343947e1cbdbe979c770378d
+    home: https://minio.io
+    icon: https://www.minio.io/logo/img/logo-dark.svg
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: hello@acale.ph
+      name: Acaleph
+    - email: hello@minio.io
+      name: Minio
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/minio-0.0.4.tgz
+    version: 0.0.4
+  mongodb:
+  - created: 2017-02-20T13:40:27.816395343Z
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: 7d334e12acf9327f58f9a890e884a61ad760da2b1081d4a79b5680bee055cdbd
+    engine: gotpl
+    home: https://mongodb.org
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/mongodb-0.4.7.tgz
+    version: 0.4.7
+  mysql:
+  - created: 2017-02-20T13:40:27.8167101Z
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system.
+    digest: 66b9a6787a36c72095c24499a45f2d3bfc700e31420a8926d09c029604ac4c98
+    engine: gotpl
+    home: https://www.mysql.com/
+    icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    maintainers:
+    - email: viglesias@google.com
+      name: Vic Iglesias
+    name: mysql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/mysql
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/mysql-0.2.5.tgz
+    version: 0.2.5
+  owncloud:
+  - created: 2017-02-20T13:40:27.817337234Z
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 9f04a1d03fe006e1b0a7ccf6b2b161b76fddb7695308afd50b5313564f5bbc13
+    engine: gotpl
+    home: https://owncloud.org/
+    icon: https://bitnami.com/assets/stacks/owncloud/img/owncloud-stack-220x234.png
+    keywords:
+    - owncloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: owncloud
+    sources:
+    - https://github.com/bitnami/bitnami-docker-owncloud
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/owncloud-0.4.4.tgz
+    version: 0.4.4
+  postgresql:
+  - created: 2017-02-20T13:40:27.817682186Z
+    description: Object-relational database management system (ORDBMS) with an emphasis
+      on extensibility and on standards-compliance.
+    digest: 0ca09fbfd539d5258026fcaf7b640f88295271f88773acfa540dcd55cfaf6036
+    engine: gotpl
+    home: https://www.postgresql.org/
+    icon: https://www.postgresql.org/media/img/about/press/elephant.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    maintainers:
+    - name: swordbeta
+    - name: databus23
+    name: postgresql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/postgres
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/postgresql-0.4.0.tgz
+    version: 0.4.0
+  traefik:
+  - apiVersion: v1
+    created: 2017-02-20T13:40:27.818158355Z
+    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
+      support
+    digest: 5bb7b98b962098808e3b73f604592bc4c6e6245e0074fa0c99308fc04bf766b8
+    engine: gotpl
+    home: http://traefik.io/
+    icon: http://traefik.io/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - acme
+    - letsencrypt
+    maintainers:
+    - email: engineering@deis.com
+      name: Deis
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    - https://github.com/krancour/charts/tree/master/traefik
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/traefik-1.1.2-f.tgz
+    version: 1.1.2-f
+  wordpress:
+  - created: 2017-02-20T13:40:27.81879028Z
+    description: Web publishing platform for building blogs and websites.
+    digest: 0904685ed2159e91fc4d6b9e84073f4ce0747bd072ec85b9927d7073619147ec
+    engine: gotpl
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - https://git.greenqloud.com/sverrir/qstack-helm/raw/charts/wordpress-0.4.2.tgz
+    version: 0.4.2
+generated: 2017-02-20T13:40:27.812753933Z
