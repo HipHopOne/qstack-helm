@@ -6,7 +6,7 @@ Application Orchestration in [Qstack](https://qstack.com).
 
 # How to update charts
 
-Install [Helm](https://github.com/kubernetes/helm])
+Install and configure [Helm](https://github.com/kubernetes/helm])
 
 ## Configure repositories
 
@@ -33,5 +33,5 @@ done
 Note: You need to provide the url to the final location of the downloadable artifacts.
 
 ```bash 
-helm repo index --url https://git.greenqloud.com/sverrir/qstack-helm/raw/charts ./charts
+helm repo index --url https://git.greenqloud.com/sverrir/qstack-helm/blob/master/charts/ ./charts
 ```
