@@ -12,6 +12,7 @@ Install and configure [Helm](https://github.com/kubernetes/helm])
 
 ```bash
 helm repo add kubernetes-charts http://storage.googleapis.com/kubernetes-charts
+helm repo add kube-test-container https://raw.githubusercontent.com/sverrirab/kube-test-container/master/helm/charts/
 ```
 
 ## Clean previous charts

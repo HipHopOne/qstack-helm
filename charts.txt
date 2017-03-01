@@ -1,14 +1,11 @@
+kube-test-container/kube-test-container
 kubernetes-charts/cockroachdb
 kubernetes-charts/dokuwiki
 kubernetes-charts/drupal
 kubernetes-charts/jenkins
 kubernetes-charts/joomla
-kubernetes-charts/jenkins
-kubernetes-charts/joomla
 kubernetes-charts/minio
 kubernetes-charts/mongodb
 kubernetes-charts/mysql
-kubernetes-charts/owncloud
 kubernetes-charts/postgresql
-kubernetes-charts/traefik
 kubernetes-charts/wordpress
