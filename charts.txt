@@ -3,9 +3,9 @@ kubernetes-charts/cockroachdb
 kubernetes-charts/dokuwiki
 kubernetes-charts/drupal
 kubernetes-charts/jenkins
-kubernetes-charts/joomla
 kubernetes-charts/minio
 kubernetes-charts/mongodb
 kubernetes-charts/mysql
 kubernetes-charts/postgresql
+kubernetes-charts/spark
 kubernetes-charts/wordpress
