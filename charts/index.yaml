@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   cockroachdb:
-  - created: 2017-03-02T11:25:45.091863875Z
+  - created: 2017-03-03T08:44:58.429853046Z
     description: CockroachDB is a scalable, survivable, strongly-consistent SQL database.
     digest: c51bf6c3d07067b80ca8661ff8460b2bb7d25d242f153045668ba95566fc8069
     home: https://www.cockroachlabs.com
@@ -16,7 +16,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/cockroachdb-0.2.2.tgz
     version: 0.2.2
   dokuwiki:
-  - created: 2017-03-02T11:25:45.092193353Z
+  - created: 2017-03-03T08:44:58.431152301Z
     description: DokuWiki is a standards-compliant, simple to use wiki optimized for
       creating documentation. It is targeted at developer teams, workgroups, and small
       companies. All data is stored in plain text files, so no database is required.
@@ -38,7 +38,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/dokuwiki-0.1.2.tgz
     version: 0.1.2
   drupal:
-  - created: 2017-03-02T11:25:45.092727111Z
+  - created: 2017-03-03T08:44:58.432373875Z
     description: One of the most versatile open source content management systems.
     digest: 7fcea4684a3d520454aeaa10beb9f9b1789c09c097680fc484954084f283feb3
     engine: gotpl
@@ -62,7 +62,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/drupal-0.4.3.tgz
     version: 0.4.3
   jenkins:
-  - created: 2017-03-02T11:25:45.093117009Z
+  - created: 2017-03-03T08:44:58.432768704Z
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -81,31 +81,9 @@ entries:
     urls:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/jenkins-0.1.14.tgz
     version: 0.1.14
-  joomla:
-  - created: 2017-03-02T11:25:45.093650312Z
-    description: PHP content management system (CMS) for publishing web content
-    digest: 1e067e459873ae832d54ff516a3420f7f0e16ecd8f72f4c4f02be22e47702077
-    engine: gotpl
-    home: http://www.joomla.org/
-    icon: https://bitnami.com/assets/stacks/joomla/img/joomla-stack-220x234.png
-    keywords:
-    - joomla
-    - cms
-    - blog
-    - http
-    - php
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    name: joomla
-    sources:
-    - https://github.com/bitnami/bitnami-docker-joomla
-    urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/joomla-0.4.4.tgz
-    version: 0.4.4
   kube-test-container:
   - apiVersion: v1
-    created: 2017-03-02T11:25:45.09386919Z
+    created: 2017-03-03T08:44:58.432975696Z
     description: Test chart for Kubernetes / Helm for kube-test-container
     digest: 6dc0ee1d6de54d3484f268bc0bd9b03e212b05a6586b1666abeb071fc41373ac
     home: https://github.com/sverrirab/kube-test-container
@@ -115,7 +93,7 @@ entries:
     version: 1.2.0
   minio:
   - apiVersion: v1
-    created: 2017-03-02T11:25:45.09422385Z
+    created: 2017-03-03T08:44:58.433331877Z
     description: Distributed object storage server built for cloud applications and
       devops.
     digest: d19b721fcb5f0566cce4a259e296b957ba982e87343947e1cbdbe979c770378d
@@ -137,7 +115,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/minio-0.0.4.tgz
     version: 0.0.4
   mongodb:
-  - created: 2017-03-02T11:25:45.094511803Z
+  - created: 2017-03-03T08:44:58.433898585Z
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -159,7 +137,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mongodb-0.4.7.tgz
     version: 0.4.7
   mysql:
-  - created: 2017-03-02T11:25:45.09482359Z
+  - created: 2017-03-03T08:44:58.434251117Z
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 66b9a6787a36c72095c24499a45f2d3bfc700e31420a8926d09c029604ac4c98
@@ -181,7 +159,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mysql-0.2.5.tgz
     version: 0.2.5
   postgresql:
-  - created: 2017-03-02T11:25:45.095151945Z
+  - created: 2017-03-03T08:44:58.434581043Z
     description: Object-relational database management system (ORDBMS) with an emphasis
       on extensibility and on standards-compliance.
     digest: 0ca09fbfd539d5258026fcaf7b640f88295271f88773acfa540dcd55cfaf6036
@@ -204,7 +182,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/postgresql-0.4.0.tgz
     version: 0.4.0
   spark:
-  - created: 2017-03-02T11:25:45.095483006Z
+  - created: 2017-03-03T08:44:58.434877445Z
     description: Fast and general-purpose cluster computing system.
     digest: 1cea71eb812c7ea6d566ad34247ad8d1c7b2a460b908748372618a94f035d974
     home: http://spark.apache.org
@@ -220,7 +198,7 @@ entries:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/spark-0.1.3.tgz
     version: 0.1.3
   wordpress:
-  - created: 2017-03-02T11:25:45.096100112Z
+  - created: 2017-03-03T08:44:58.435549262Z
     description: Web publishing platform for building blogs and websites.
     digest: 0689b452d3c9a9bee6e5c84b48172c68de6eedc253223b96ab6500ad88a5de40
     engine: gotpl
@@ -243,4 +221,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/wordpress-0.4.2.tgz
     version: 0.4.2
-generated: 2017-03-02T11:25:45.090664549Z
+generated: 2017-03-03T08:44:58.428087081Z
