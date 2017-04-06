@@ -1,0 +1,2 @@
+kubernetes-charts/ghost
+kubernetes-charts/cockroachdb
