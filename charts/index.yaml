@@ -1,26 +1,26 @@
 apiVersion: v1
 entries:
-  cockroachdb:
-  - created: 2017-03-03T08:44:58.429853046Z
-    description: CockroachDB is a scalable, survivable, strongly-consistent SQL database.
-    digest: c51bf6c3d07067b80ca8661ff8460b2bb7d25d242f153045668ba95566fc8069
-    home: https://www.cockroachlabs.com
-    icon: https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png
+  chaoskube:
+  - created: 2017-04-05T00:14:33.066654051-07:00
+    description: Chaoskube periodically kills random pods in your Kubernetes cluster.
+    digest: c90ff57a6205c725520dc600b439fc8eda120c3d8d4d4b7c9feee60bf62629cb
+    engine: gotpl
+    home: https://github.com/linki/chaoskube
     maintainers:
-    - email: alex@cockroachlabs.com
-      name: Alex Robinson
-    name: cockroachdb
+    - email: linki+kubernetes.io@posteo.de
+      name: Martin Linkhorst
+    name: chaoskube
     sources:
-    - https://github.com/cockroachdb/cockroach
+    - https://github.com/linki/chaoskube
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/cockroachdb-0.2.2.tgz
-    version: 0.2.2
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/chaoskube-0.5.0.tgz
+    version: 0.5.0
   dokuwiki:
-  - created: 2017-03-03T08:44:58.431152301Z
+  - created: 2017-04-05T00:14:33.066996093-07:00
     description: DokuWiki is a standards-compliant, simple to use wiki optimized for
       creating documentation. It is targeted at developer teams, workgroups, and small
       companies. All data is stored in plain text files, so no database is required.
-    digest: f533bc20e08179a49cca77b175f897087dc3f2c57e6c89ecbd7264ab5975d66a
+    digest: 3c46f9d9196bbf975711b2bb7c889fd3df1976cc57c3c120c7374d721da0e240
     engine: gotpl
     home: http://www.dokuwiki.org/
     icon: https://bitnami.com/assets/stacks/dokuwiki/img/dokuwiki-stack-110x117.png
@@ -35,12 +35,12 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-dokuwiki
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/dokuwiki-0.1.2.tgz
-    version: 0.1.2
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/dokuwiki-0.1.3.tgz
+    version: 0.1.3
   drupal:
-  - created: 2017-03-03T08:44:58.432373875Z
+  - created: 2017-04-05T00:14:33.068112836-07:00
     description: One of the most versatile open source content management systems.
-    digest: 7fcea4684a3d520454aeaa10beb9f9b1789c09c097680fc484954084f283feb3
+    digest: 17d0bfdcdf5a1a650941343c76b6b928d76d3332fece127c502e91f9597f419e
     engine: gotpl
     home: http://www.drupal.org/
     icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
@@ -59,14 +59,37 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-drupal
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/drupal-0.4.3.tgz
-    version: 0.4.3
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/drupal-0.4.6.tgz
+    version: 0.4.6
+  gitlab-ce:
+  - created: 2017-04-05T00:14:33.069350454-07:00
+    description: GitLab Community Edition
+    digest: 80094520d1bee55c7e25ad740bbfe3740814f389e6221b2fa536f77aabba9b37
+    home: https://about.gitlab.com
+    icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    - issue tracker
+    - code review
+    - wiki
+    maintainers:
+    - email: gtaylor@gc-taylor.com
+      name: Greg Taylor
+    name: gitlab-ce
+    sources:
+    - https://hub.docker.com/r/gitlab/gitlab-ce/
+    - https://docs.gitlab.com/omnibus/
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/gitlab-ce-0.1.6.tgz
+    version: 0.1.6
   jenkins:
-  - created: 2017-03-03T08:44:58.432768704Z
+  - created: 2017-04-05T00:14:33.069790501-07:00
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
-    digest: 6c5039f7ab62e7f74bb902f5804814f66733c535908b4ffae1cf759efa3c6f24
+    digest: afa4583548e2e89617e21b91ef014285f060ad4a5355741260d72e27bb8eb4d3
     home: https://jenkins.io/
     icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
     maintainers:
@@ -79,11 +102,11 @@ entries:
     - https://github.com/jenkinsci/jenkins
     - https://github.com/jenkinsci/docker-jnlp-slave
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/jenkins-0.1.14.tgz
-    version: 0.1.14
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/jenkins-0.3.1.tgz
+    version: 0.3.1
   kube-test-container:
   - apiVersion: v1
-    created: 2017-03-03T08:44:58.432975696Z
+    created: 2017-04-05T00:14:33.070028538-07:00
     description: Test chart for Kubernetes / Helm for kube-test-container
     digest: 6dc0ee1d6de54d3484f268bc0bd9b03e212b05a6586b1666abeb071fc41373ac
     home: https://github.com/sverrirab/kube-test-container
@@ -91,12 +114,57 @@ entries:
     urls:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/kube-test-container-1.2.0.tgz
     version: 1.2.0
+  mariadb:
+  - created: 2017-04-05T00:14:33.070366212-07:00
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system. MariaDB Server is intended for mission-critical, heavy-load
+      production systems as well as for embedding into mass-deployed software.
+    digest: 23b81e8bc8cd8577a47a73578b56f68a2a3c15640e0a0fb0ac7f1646845bc0b0
+    engine: gotpl
+    home: https://mariadb.org
+    icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mariadb-0.5.14.tgz
+    version: 0.5.14
+  mediawiki:
+  - created: 2017-04-05T00:14:33.07094904-07:00
+    description: Extremely powerful, scalable software and a feature-rich wiki implementation
+      that uses PHP to process and display data stored in a database.
+    digest: 0e419c2c5d87997f94a32da6597af3f3b52120dc1ec682dcbb6b238fb4825e06
+    engine: gotpl
+    home: http://www.mediawiki.org/
+    icon: https://bitnami.com/assets/stacks/mediawiki/img/mediawiki-stack-220x234.png
+    keywords:
+    - mediawiki
+    - wiki
+    - http
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mediawiki
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mediawiki
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mediawiki-0.4.5.tgz
+    version: 0.4.5
   minio:
   - apiVersion: v1
-    created: 2017-03-03T08:44:58.433331877Z
+    created: 2017-04-05T00:14:33.071438312-07:00
     description: Distributed object storage server built for cloud applications and
       devops.
-    digest: d19b721fcb5f0566cce4a259e296b957ba982e87343947e1cbdbe979c770378d
+    digest: 732a9955c01a456973cfbe02c627fb2e9b8cb618d04f5d23a2048111b3263d17
     home: https://minio.io
     icon: https://www.minio.io/logo/img/logo-dark.svg
     keywords:
@@ -112,14 +180,14 @@ entries:
     sources:
     - https://github.com/minio/minio
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/minio-0.0.4.tgz
-    version: 0.0.4
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/minio-0.1.0.tgz
+    version: 0.1.0
   mongodb:
-  - created: 2017-03-03T08:44:58.433898585Z
+  - created: 2017-04-05T00:14:33.071745704-07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
-    digest: 7d334e12acf9327f58f9a890e884a61ad760da2b1081d4a79b5680bee055cdbd
+    digest: cdc9fc28ff9139fcc6be015177e481f9d3765d6af284dce1999fc334cd7ef3a4
     engine: gotpl
     home: https://mongodb.org
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
@@ -134,10 +202,10 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-mongodb
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mongodb-0.4.7.tgz
-    version: 0.4.7
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mongodb-0.4.8.tgz
+    version: 0.4.8
   mysql:
-  - created: 2017-03-03T08:44:58.434251117Z
+  - created: 2017-04-05T00:14:33.072078617-07:00
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 66b9a6787a36c72095c24499a45f2d3bfc700e31420a8926d09c029604ac4c98
@@ -158,11 +226,83 @@ entries:
     urls:
     - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/mysql-0.2.5.tgz
     version: 0.2.5
+  nginx-ingress:
+  - created: 2017-04-05T00:14:33.072581129-07:00
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 4e4632273eb5db95e525a8899b9f6f1697db241c2ff1ccb7456e0fc916bb75c2
+    engine: gotpl
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    maintainers:
+    - email: jack.zampolin@gmail.com
+      name: Jack Zampolin
+    - email: mgoodness@gmail.com
+      name: Michael Goodness
+    - email: chance.zibolski@coreos.com
+      name: Chance Zibolski
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/contrib/tree/master/ingress/controllers/nginx
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/nginx-ingress-0.3.1.tgz
+    version: 0.3.1
+  openvpn:
+  - apiVersion: v1
+    created: 2017-04-05T00:14:33.072936672-07:00
+    description: A Helm chart to install an openvpn server inside a kubernetes cluster.  Certificate
+      generation is also part of the deployment, and this chart will generate client
+      keys as needed.
+    digest: c92674b7c6391e412864a3aa73af1a2d89f3b4e768bb459118b8e75b9750fc10
+    home: https://openvpn.net/index.php/open-source.html
+    icon: https://forums.openvpn.net/styles/openvpn/theme/images/ovpnlogo.png
+    keywords:
+    - openvpn
+    - vpn
+    - tunnel
+    - network
+    - service
+    - connectivity
+    - encryption
+    maintainers:
+    - email: john.felten@gmail.com
+      name: John Felten
+    name: openvpn
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/openvpn-1.0.1.tgz
+    version: 1.0.1
+  orangehrm:
+  - created: 2017-04-05T00:14:33.073608336-07:00
+    description: OrangeHRM is a free HR management system that offers a wealth of
+      modules to suit the needs of your business.
+    digest: 000248c97bfec928730bb8e0c7999164b2e6ffcfd1f56c521946c064d3db6216
+    engine: gotpl
+    home: https://www.orangehrm.com
+    icon: https://bitnami.com/assets/stacks/orangehrm/img/orangehrm-stack-110x117.png
+    keywords:
+    - orangehrm
+    - http
+    - https
+    - web
+    - application
+    - php
+    - human resources
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: orangehrm
+    sources:
+    - https://github.com/bitnami/bitnami-docker-orangehrm
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/orangehrm-0.4.4.tgz
+    version: 0.4.4
   postgresql:
-  - created: 2017-03-03T08:44:58.434581043Z
+  - created: 2017-04-05T00:14:33.074056209-07:00
     description: Object-relational database management system (ORDBMS) with an emphasis
       on extensibility and on standards-compliance.
-    digest: 0ca09fbfd539d5258026fcaf7b640f88295271f88773acfa540dcd55cfaf6036
+    digest: 60224116f1e803bbf744cb2b3c2d621cfadef709ef0a8c6ed08cbed0f5415915
     engine: gotpl
     home: https://www.postgresql.org/
     icon: https://www.postgresql.org/media/img/about/press/elephant.png
@@ -179,12 +319,34 @@ entries:
     - https://github.com/kubernetes/charts
     - https://github.com/docker-library/postgres
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/postgresql-0.4.0.tgz
-    version: 0.4.0
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/postgresql-0.6.0.tgz
+    version: 0.6.0
+  redis:
+  - created: 2017-04-05T00:14:33.074981021-07:00
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 72af23bdc2aee61a6cc75e6b7fe3677d1f08ec98afbf8b6fccb3922c9bde47aa
+    engine: gotpl
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/redis-0.5.1.tgz
+    version: 0.5.1
   spark:
-  - created: 2017-03-03T08:44:58.434877445Z
+  - created: 2017-04-05T00:14:33.076461604-07:00
     description: Fast and general-purpose cluster computing system.
-    digest: 1cea71eb812c7ea6d566ad34247ad8d1c7b2a460b908748372618a94f035d974
+    digest: d37ec7d7530a5836eeeb5ff54110d594efe188ce8175a7c2e3b50e5d9f5af9bc
     home: http://spark.apache.org
     icon: http://spark.apache.org/images/spark-logo-trademark.png
     maintainers:
@@ -195,12 +357,36 @@ entries:
     - https://github.com/kubernetes/kubernetes/tree/master/examples/spark
     - https://github.com/apache/spark
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/spark-0.1.3.tgz
-    version: 0.1.3
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/spark-0.1.4.tgz
+    version: 0.1.4
+  traefik:
+  - apiVersion: v1
+    created: 2017-04-05T00:14:33.077197862-07:00
+    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
+      support
+    digest: 4019610a5fb1defcc5bc90532cb19c986999114f7de4aef3f0272e6c7ed1b914
+    engine: gotpl
+    home: http://traefik.io/
+    icon: http://traefik.io/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - acme
+    - letsencrypt
+    maintainers:
+    - email: engineering@deis.com
+      name: Deis
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    - https://github.com/krancour/charts/tree/master/traefik
+    urls:
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/traefik-1.2.1-a.tgz
+    version: 1.2.1-a
   wordpress:
-  - created: 2017-03-03T08:44:58.435549262Z
+  - created: 2017-04-05T00:14:33.077907777-07:00
     description: Web publishing platform for building blogs and websites.
-    digest: 0689b452d3c9a9bee6e5c84b48172c68de6eedc253223b96ab6500ad88a5de40
+    digest: 4413a17258eaca753252174a219ba9081283a406375d8ae49e5c1f3313c6619a
     engine: gotpl
     home: http://www.wordpress.com/
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
@@ -219,6 +405,6 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-wordpress
     urls:
-    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/wordpress-0.4.2.tgz
-    version: 0.4.2
-generated: 2017-03-03T08:44:58.428087081Z
+    - https://raw.githubusercontent.com/greenqloud/qstack-helm/master/charts/wordpress-0.5.2.tgz
+    version: 0.5.2
+generated: 2017-04-05T00:14:33.066233009-07:00
